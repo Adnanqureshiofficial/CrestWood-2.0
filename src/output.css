@@ -942,6 +942,10 @@ video {
   background-image: url('/images/homeImage2.png');
 }
 
+.bg-\[url\(\'\/images\/homeImage3\.png\'\)\] {
+  background-image: url('/images/homeImage3.png');
+}
+
 .from-\[\#fc8d3d\] {
   --tw-gradient-from: #fc8d3d var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(252 141 61 / 0) var(--tw-gradient-to-position);
