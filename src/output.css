@@ -721,6 +721,10 @@ video {
   min-height: 100;
 }
 
+.min-h-\[200px\] {
+  min-height: 200px;
+}
+
 .w-28 {
   width: 7rem;
 }
@@ -883,6 +887,10 @@ video {
 
 .rounded-xl {
   border-radius: 0.75rem;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 
 .border-2 {
