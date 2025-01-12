@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrestWood Interiors</title>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Yatra+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/22473a59b2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="src/output.css">
+</head>
+
+<body>
+    <header class="w-full  min-h-0 fixed bg-[#FFD193] sm:px-8 font-Italiana">
+        <nav class="w-full p-4 py-6  min-h-0  flex justify-between  sm:justify-between items-center">
+            <div class="flex  text-2xl items-center">
+
+                <i class="fa-solid fa-bars text-3xl  text-black px-4 cursor-pointer hover:text-white" id="bar"></i>
+                <p class="text-black hidden font-semibold sm:block">Menu</p>
+            </div>
+            <div class="w-full flex justify-center">
+                <h1 class="font-bold text-2xl text-center sm:text-3xl">CrestWood Interiors</h1>
+            </div>
+            <a href="portflio.html" class=" hidden  text-xl font-semibold  hover:text-white sm:flex  ">Portfolio</a>
+        </nav>
+
+        <!-- hidden nav bar    -->
+        <div id="hidden_menu" class="max-w-[280px] px-4 h-screen   fixed top-0 left-0 bg-black  bg-gradient-to-b from-[#fc8d3d] to-[#FFD091]
+             hidden flex-col overflow-auto  sm:min-w-[315px]">
+
+            <div class="m-3" id="close_icon"><i class="fa-solid fa-x text-3xl  text-black hover:text-white"></i>
+            </div>
+            <div class=" p-4 ml-0">
+                <h2 class="  text-xl sm:text-2xl p-4  border-2 border-black bg-[#FFCC8C] font-bold">CrestWood Interiors
+                </h2>
+            </div>
+            <ul class="flex  flex-col justify-center my-3">
+                <li class="text-xl p-2  text-center md:text-2xl font-bold "><a href="index.html"
+                        class=" decoration-none hover:text-white">Shop</a>
+                </li>
+                <li class="text-xl p-2  text-center md:text-2xl font-bold "><a href="index.html"
+                        class=" decoration-none hover:text-white">About</a>
+                </li>
+                <li class="text-xl p-2  text-center md:text-2xl font-bold  "><a href="index.html"
+                        class=" decoration-none hover:text-white">Contact</a>
+                </li>
+                <li class="text-xl p-2  text-center md:text-2xl font-bold "><a href="index.html"
+                        class=" decoration-none hover:text-white">Services</a>
+                </li>
+                <li class="text-xl p-2  text-center md:text-2xl font-bold "><a href="index.html"
+                        class=" decoration-none hover:text-white">Portfolio</a>
+                </li>
+                <li class="text-xl p-2  text-center md:text-2xl font-bold "><a href="index.html"
+                        class=" decoration-none hover:text-white">Book Consultaion</a>
+                </li>
+            </ul>
+
+            <!-- social icon -->
+            <div class="m-4 my-6 flex justify-between">
+                <a href="index.html" class=" decoration-none hover:text-white">
+                    <i class="fa-brands fa-instagram text-3xl"></i></a>
+                <a href="index.html" class=" decoration-none hover:text-white">
+                    <i class="fa-brands fa-facebook  text-2xl sm:text-3xl"></i></a>
+                <a href="index.html" class=" decoration-none hover:text-white">
+                    <i class="fa-brands fa-instagram text-3xl"></i></a>
+                <a href="index.html" class=" decoration-none hover:text-white">
+                    <i class="fa-brands fa-x-twitter text-3xl"></i></a>
+                <a href="index.html" class=" decoration-none hover:text-white">
+                    <i class="fa-brands fa-linkedin-in text-3xl"></i></a>
+            </div>
+
+            <div class=" p-3  text-base font-bold text-center bg-[#f7ce9c] w-full  mb-2 md:text-xl">
+                Address: Crestodd Interiors, Sunset Avenue, Malabar Hill, Mumbai, Maharashtra ,
+                400006, India
+            </div>
+        </div>
+    </header>
+    <!-- Main section  -->
+
+    <main
+        class="bg-[url('/images/hero_image.png')] bg-fixed overflow-x-hidden bg-cover bg-center bg-no-repeat min-h-screen w-full ">
+
+        <div
+            class="chat_icon_block min-w-fit text-[#8E3100]  text-xl fixed bottom-4 right-4 flex  justify-center items-center">
+            <div class="letChat p-3 bg-[#FCD49E] rounded-xl shadow-[0px_4px_40px_##0000004f] font-Italiana font-bold">
+                Let's Chat</div>
+            <div class="chat_icon hover:text-[#e38100c9] cursor-pointer ">
+                <i class="fa-regular fa-comment shadow-[0px_4px_40px_#000000d4] rounded-[80px] bg-[#FCD49E] mx-4 p-2 px-6 text-3xl"
+                    id="chat"></i>
+            </div>
+            <div id="whatsapp"
+                class="w-[230px] hidden shadow-[0px_4px_40px_#000000d4] text-center text-base text-black font-semibold p-4 rounded-xl  bg-[#FCD49E] min-h-0 fixed bottom-20 right-4 ">
+
+                <div>Want to Redesign your Home? Talk to our Desginers!</div>
+                <a href="https://wa.me/<phone_number>"
+                    class="text-center  bg-[#e38100c9] flex justify-center text-base bg-red-500 p-2 rounded-xl mt-4  hover:text-white"
+                    target="_blank" id="chat_button">Chat on WhatsApp </a>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Book COnsultaion CTA Button  -->
+    <section class="w-full">
+
+        <div
+            class="  p-14 bg-gradient-to-b from-[#FFD6A0] to-[#FF9648] flex justify-center items-center md:py-2 md:pt-16 md:min-h-[80vh] md:px-20">
+            <div class="h-[90%] flex flex-col justify-around items-center">
+                <div>
+                    <h2 class="text-3xl  md:text-4xl font-semibold font-Italiana text-center p-6 md:pt-0">"Crafting
+                        Timeless
+                        Spaces"</h2>
+                </div>
+                <div class="text-center md:w-[60%] text-xl lg mb-4 ">Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Odio
+                    numquam,
+                    ex
+                    modi ipsam voluptas dolor
+                    placeat, voluptatum, maiores quibusdam cupiditate<br> culpa accusamus sed repellendus quae
+                    laudantium
+                    impedit nobis esse veritatis?
+                    Dolore, harum. Dolores adipisci itaque rem fuga quae ea temporibus tempore eligendi placeat facilis
+                    illo
+                    sunt tempora <br>voluptatum consequatur, porro aliquam assumenda ad deserunt possimus delectus!
+                    Eaque
+                    odio
+                    ea repudiandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure rerum, totam tempore
+                    earum <br>
+                    odio soluta at rem deleniti unde exercitationem possimus sint quasi maxime reprehenderit aut tempora
+                    quas animi illo.
+
+                </div>
+                <div class="min-h-0   flex justify-center items-center m-5  md:mb-16">
+                    <a href="consultation.html"
+                        class="p-2 px-6 mt-4 bg-black text-white text-2xl font-Italiana  hover:text-[#FFD6A0]">Book
+                        Consulation</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- image-section 2 -->
+    <section
+        class="bg-[url('/images/homeImage2.png')] bg-fixed overflow-x-hidden bg-cover bg-center bg-no-repeat min-h-screen w-full ">
+    </section>
+    <!-- section -3  -->
+
+
+    <div
+        class="  p-14 bg-gradient-to-b from-[#FFD6A0] to-[#FF9648] flex justify-center shadow-[10px_4px_4px_black] items-center md:py-2 md:pt-16 md:min-h-[80vh] md:px-20">
+        <div class="h-[90%] flex flex-col justify-around items-center">
+            <div>
+                <h2 class="text-3xl  md:text-4xl font-semibold font-Italiana text-center p-6 md:pt-0">"Elevating Spaces,
+                    Enhancing Lives"</h2>
+            </div>
+            <div
+                class="text-center p-3 text-xl  text-[#FB5900] italic font-bold font-Italiana md:text-2xl md:w-[75%] md:mb-4">
+                <h2>Home is the most important space in our lives. The environment you surround yourself in defines how
+                    you live, breathe, and feel, so why not make it magical?</h2>
+            </div>
+            <div class="text-center md:w-[60%] text-xl lg mb-4 ">Based in Mumbai City an, top interior designer
+                Crestwood Design highlights the sophistication of Mumbai with the flavor, and just a twist, of
+                elegance.With a style that's unrestrained yet very refined, our team of Crestwood interior designers
+                creates homes and commercial spaces that are the visual stories of the people living or working there.
+                CW's interiors are bold statements balanced by quiet details, the dark accents in a white room, the
+                well-defined edge that contains a surprise of color.
+
+            </div>
+            <div class="min-h-0   flex justify-center items-center m-5">
+                <a href="consultation.html"
+                    class="p-2 px-6 mt-4 bg-black text-white text-2xl font-Italiana  hover:text-[#FFD6A0] md:px-16">About
+                    Us</a>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- section 4 -->
+    <section
+        class="bg-[url('/images/homeImage2.png')] bg-fixed overflow-x-hidden bg-cover bg-center bg-no-repeat min-h-screen w-full ">
+
+
+
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+        const bar = document.getElementById("bar");
+        const hidden_menu = document.getElementById("hidden_menu");
+        const closeIcon = document.getElementById('close_icon');
+
+        bar.addEventListener('click', () => {
+            hidden_menu.classList.remove('hidden');
+            hidden_menu.classList.add('flex');
+        });
+
+        closeIcon.addEventListener('click', () => {
+
+            hidden_menu.classList.remove('flex');
+            hidden_menu.classList.add('hidden');
+        });
+
+        // whatsapp 
+        const whatsapp = document.getElementById('whatsapp');
+        const chatIcon = document.getElementById('chat');
+
+        chatIcon.addEventListener('click', () => {
+            whatsapp.classList.toggle('hidden');
+
+
+
+        }
+
+        )
+
+    </script>
+</body>
+
+</html>
