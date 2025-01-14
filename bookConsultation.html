@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Consulation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Yatra+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/22473a59b2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="src/output.css">
+</head>
+
+<body >
+<!-- Header  -->
+<header class="w-full z-10  min-h-0 fixed bg-[#FFD193] sm:px-8 font-Italiana">
+    <nav class="w-full p-4 py-6  min-h-0  flex justify-between  sm:justify-between items-center">
+        <div class="flex text-2xl items-center">
+
+            <i class="fa-solid fa-bars text-3xl  text-black px-4 cursor-pointer hover:text-white" id="bar"></i>
+            <p class="text-black hidden font-semibold sm:block">Menu</p>
+        </div>
+        <div class="w-full flex justify-center">
+            <h1 class="font-bold text-2xl text-center sm:text-3xl">CrestWood Interiors</h1>
+        </div>
+        <a href="portflio.html" class=" hidden  text-xl font-semibold  hover:text-white sm:flex  ">Portfolio</a>
+    </nav>
+
+    <!-- hidden nav bar    -->
+    <div id="hidden_menu" class="max-w-[280px] px-4 h-screen   fixed top-0 left-0 bg-black  bg-gradient-to-b from-[#fc8d3d] to-[#FFD091]
+         hidden flex-col overflow-auto  sm:min-w-[315px]">
+
+        <div class="m-3" id="close_icon"><i class="fa-solid fa-x text-3xl  text-black hover:text-white"></i>
+        </div>
+        <div class=" p-4 ml-0">
+            <h2 class="  text-xl sm:text-2xl p-4  border-2 border-black bg-[#FFCC8C] font-bold">CrestWood Interiors
+            </h2>
+        </div>
+        <ul class="flex  flex-col justify-center my-3">
+            <li class="text-xl p-2  text-center md:text-2xl font-bold "><a href="index.html"
+                    class=" decoration-none hover:text-white">Shop</a>
+            </li>
+            <li class="text-xl p-2  text-center md:text-2xl font-bold "><a href="index.html"
+                    class=" decoration-none hover:text-white">About</a>
+            </li>
+            <li class="text-xl p-2  text-center md:text-2xl font-bold  "><a href="index.html"
+                    class=" decoration-none hover:text-white">Contact</a>
+            </li>
+            <li class="text-xl p-2  text-center md:text-2xl font-bold "><a href="index.html"
+                    class=" decoration-none hover:text-white">Services</a>
+            </li>
+            <li class="text-xl p-2  text-center md:text-2xl font-bold "><a href="index.html"
+                    class=" decoration-none hover:text-white">Portfolio</a>
+            </li>
+            <li class="text-xl p-2  text-center md:text-2xl font-bold "><a href="bookConsultation.html"
+                    class=" decoration-none hover:text-white">Book Consultaion</a>
+            </li>
+        </ul>
+
+        <!-- social icon -->
+        <div class="m-4 my-6 flex justify-between">
+            <a href="index.html" class=" decoration-none hover:text-white">
+                <i class="fa-brands fa-instagram text-3xl"></i></a>
+            <a href="index.html" class=" decoration-none hover:text-white">
+                <i class="fa-brands fa-facebook  text-2xl sm:text-3xl"></i></a>
+            <a href="index.html" class=" decoration-none hover:text-white">
+                <i class="fa-brands fa-instagram text-3xl"></i></a>
+            <a href="index.html" class=" decoration-none hover:text-white">
+                <i class="fa-brands fa-x-twitter text-3xl"></i></a>
+            <a href="index.html" class=" decoration-none hover:text-white">
+                <i class="fa-brands fa-linkedin-in text-3xl"></i></a>
+        </div>
+
+        <div class=" p-3  text-base font-bold text-center bg-[#f7ce9c] w-full  mb-2 md:text-xl">
+            Address: Crestodd Interiors, Sunset Avenue, Malabar Hill, Mumbai, Maharashtra ,
+            400006, India
+        </div>
+    </div>
+</header>
+
+
+<section
+        class="bg-[url('/images/homeImage2.png')] bg-fixed overflow-x-hidden bg-cover bg-center bg-no-repeat min-h-[80vh] w-full ">
+    </section>
+
+    <!-- Consultation Form  -->
+    <div id="form-Block" class=" bg-gradient-to-b from-[#FFD6A0] to-[#FF9648] flex items-center justify-center p-4 md:p-12">
+    <form id="projectForm"
+        class="bg-[rgba(255,255,255,0.5)] backdrop-blur-12 p-8 rounded-lg min-h-fit w-full max-w-2xl border-t border-l border-white border-opacity-70 border-l-opacity-50 shadow-lg bg-opacity-10 backdrop-blur-md">
+        <h1 class="text-2xl md:text-3xl font-bold mb-6 text-center font-Italiana">Book Your Consultation</h1>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+            <div>
+                <label for="firstName" class="block text-base font-medium text-gray-700">First Name</label>
+                <input type="text" id="firstName" name="firstName" 
+                    class="mt-1 p-1 px-2 block w-full rounded-md  shadow-sm outline-none hover:border-[1px] hover:border-gray-400 focus:border-[1px] focus:border-gray-400  ">
+                    <p class="text-red-500 text-xs italic mt-1 hidden validation " id="firstNameError">Please enter your first name</p>
+                </div>
+            <div>
+                <label for="lastName" class="block text-base font-medium text-gray-700">Last Name</label>
+                <input type="text" id="lastName" name="lastName" 
+                    class="mt-1 p-1 px-2 block w-full rounded-md border-gray-300 outline-none shadow-sm hover:border-[1px] hover:border-gray-400 focus:border-[1px] focus:border-gray-400 ">
+                <p class="text-red-500 text-xs italic mt-1 hidden validation" id="lastNameError">Please enter your last name</p>
+            </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-4 mb-4">
+            <div>
+                <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
+                <input type="tel" id="phone" name="phone" 
+                    class="mt-1 p-1 px-2 block w-full rounded-md border-gray-300 outline-none shadow-sm focus:border-indigo-300 hover:border-[1px] hover:border-gray-400 focus:border-[1px] focus:border-gray-400 ">
+                <p class="text-red-500 text-xs italic mt-1 hidden validation" id="phoneError">Please enter a valid phone number</p>
+            </div>
+            <div>
+                <label for="email" class="block text-base font-medium text-gray-700">Email Address</label>
+                <input type="email" id="email" name="email" 
+                    class="mt-1 p-1 px-2 block w-full rounded-md border-gray-300 outline-none shadow-sm focus:border-indigo-300 hover:border-[1px] hover:border-gray-400 focus:border-[1px] focus:border-gray-400 ">
+                <p class="text-red-500 text-xs italic mt-1 hidden validation" id="emailError">Please enter a valid email address
+                </p>
+            </div>
+        </div>
+
+        <div class="border py-4 rounded-md mb-4">
+            <h2 class="text-lg font-semibold mb-2 text-gray-900">Address</h2>
+            <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                    <label for="street" class="block text-base font-medium text-gray-700">Street Address</label>
+                    <input type="text" id="street" name="street" 
+                        class="mt-1 p-1 px-2 block w-full rounded-md border-gray-300 outline-none shadow-sm hover:border-[1px] hover:border-gray-400 focus:border-[1px] focus:border-gray-400 ">
+                    <p class="text-red-500 text-xs italic mt-1 hidden validation" id="streetError">Please enter your street address
+                    </p>
+                </div>
+                <div>
+                    <label for="city" class="block text-base font-medium text-gray-700 ">City</label>
+                    <input type="text" id="city" name="city" 
+                        class="mt-1 p-1 px-2 block w-full rounded-md border-gray-300 hover:border-[1px] hover:border-gray-400 outline-none shadow-sm focus:border-[1px] focus:border-gray-400  ">
+                    <p class="text-red-500 text-xs italic mt-1 hidden validation" id="cityError">Please enter your city</p>
+                </div>
+                <div>
+                    <label for="state" class="block text-base font-medium text-gray-700">State</label>
+                    <input type="text" id="state" name="state" 
+                        class="mt-1 p-1 px-2 block w-full rounded-md border-gray-300 outline-none shadow-sm hover:border-[1px] hover:border-gray-400 focus:border-[1px] focus:border-gray-400 ">
+                    <p class="text-red-500 text-xs italic mt-1 hidden validation" id="stateError">Please enter your state</p>
+                </div>
+                <div>
+                    <label for="pincode" class="block text-base font-medium text-gray-700">Pin Code</label>
+                    <input type="text" id="pincode" name="pincode" 
+                        class="mt-1 p-1 px-2 block w-full rounded-md border-gray-300 outline-none shadow-sm hover:border-[1px] hover:border-gray-400 focus:border-[1px] focus:border-gray-400 ">
+                    <p class="text-red-500 text-xs italic mt-1 hidden validation" id="pincodeError">Please enter a valid pin code
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-4">
+            <label for="projectDetails" class="block text-base font-medium text-gray-700">Project Details</label>
+            <textarea id="projectDetails" name="projectDetails" rows="4" 
+                class="mt-1 p-1 px-2 block w-full rounded-md border-gray-300 outline-none shadow-sm hover:border-[1px] hover:border-gray-400 focus:border-[1px] focus:border-gray-400 "></textarea>
+            <p class="text-red-500 text-xs italic mt-1 hidden validation" id="projectDetailsError">Please provide project details
+            </p>
+        </div>
+
+        <div class="mb-4">
+            <label class="block text-base font-medium text-gray-700 mb-2">Estimated Budget for the Project</label>
+            <div class="space-y-2 pl-4 text-base">
+                <label class="inline-flex items-center ">
+                    <input type="radio" name="budget" value="0-1000"  class="form-radio accent-[#4f46e5]">
+                    <span class="ml-2">$0 - $1,000</span>
+                </label> <br>
+                <label class="inline-flex items-center">
+                    <input type="radio" name="budget" value="1001-5000"  class="form-radio accent-indigo-600">
+                    <span class="ml-2">$1,001 - $5,000</span>
+                </label><br>
+                <label class="inline-flex items-center">
+                    <input type="radio" name="budget" value="5001-10000"  class="form-radio accent-indigo-600">
+                    <span class="ml-2">$5,001 - $10,000</span>
+                </label><br>
+                <label class="inline-flex items-center">
+                    <input type="radio" name="budget" value="10001-50000"  class="form-radio accent-indigo-600">
+                    <span class="ml-2">$10,001 - $50,000</span>
+                </label><br>
+                <label class="inline-flex items-center">
+                    <input type="radio" name="budget" value="50001+"  class="form-radio accent-indigo-600">
+                    <span class="ml-2">$50,001+</span>
+                </label>
+            </div>
+            <p class="validation text-red-500 text-xs italic mt-1 hidden validation" id="budgetError">Please select an estimated budget</p>
+        </div>
+
+        <div class="mb-4">
+            <label class="block text-base font-medium text-gray-700 mb-2">Deadline for this Project</label>
+            <div class="space-x-4 pl-4">
+                <label class="inline-flex items-center">
+                    <input type="radio" name="deadline" value="yes"  class="form-radio accent-indigo-600">
+                    <span class="ml-2">Yes</span>
+                </label>
+                <label class="inline-flex items-center">
+                    <input type="radio" name="deadline" value="no"  class="form-radio accent-indigo-600">
+                    <span class="ml-2">No</span>
+                </label>
+            </div>
+            <p class="text-red-500 text-xs italic mt-1 hidden validation" id="deadlineError">Please select if there's a deadline
+            </p>
+        </div>
+
+        <div class="mb-6">
+            <label class="block text-base font-medium text-gray-700 mb-2">Best Way to Contact You</label>
+            <div class="space-x-4 pl-4">
+                <label class="inline-flex items-center">
+                    <input type="radio" name="contactMethod" value="email"  class="form-radio accent-indigo-600">
+                    <span class="ml-2">Email</span>
+                </label>
+                <label class="inline-flex items-center">
+                    <input type="radio" name="contactMethod" value="phone"  class="form-radio accent-indigo-600">
+                    <span class="ml-2">Phone</span>
+                </label>
+            </div>
+            <p class="text-red-500 text-xs italic mt-1 hidden validation" id="contactMethodError">Please select a contact method
+            </p>
+        </div>
+
+        <div class="flex items-center justify-end">
+            <button type="submit"
+                class="bg-indigo-600 hover:bg-[#3730a3] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                Submit
+            </button>
+        </div>
+    </form>
+</div>
+
+<script src="validation.js"></script>
+<script src="script.js"></script>
+
+<!-- JavaScript -->
+<!-- 
+//     const projectFrom = document.getElementById('projectForm');
+// projectFrom.addEventListener('submit', function (e) {
+//     e.preventDefault();
+//     let isValid = true;
+
+//     // clear all error messages
+//     // document.querySelectorAll('.validation').forEach(el => el.classList.add('hidden'));
+
+//     // Validate First Name
+//     if (!document.getElementById('firstName').value) {
+//         document.getElementById('firstNameError').classList.remove('hidden');
+//         isValid = false;
+//     }
+
+//     // Validate Last Name
+//     if (!document.getElementById('lastName').value) {
+//         document.getElementById('lastNameError').classList.remove('hidden');
+//         isValid = false;
+//     }
+
+//     // Validate Phone
+//     const phoneRegex = /^\d{10}$/;
+//     if (!phoneRegex.test(document.getElementById('phone').value)) {
+//         document.getElementById('phoneError').classList.remove('hidden');
+//         isValid = false;
+//     }
+
+//     // Validate Email
+//     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+//     if (!emailRegex.test(document.getElementById('email').value)) {
+//         document.getElementById('emailError').classList.remove('hidden');
+//         isValid = false;
+//     }
+
+//     // Validate Address Fields
+//     ['street', 'city', 'state', 'pincode'].forEach(field => {
+//         if (!document.getElementById(field).value) {
+//             document.getElementById(`${field}Error`).classList.remove('hidden');
+//             isValid = false;
+//         }
+//     });
+
+//     // Validate Project Details
+//     if (!document.getElementById('projectDetails').value) {
+//         document.getElementById('projectDetailsError').classList.remove('hidden');
+//         isValid = false;
+//     }
+
+//     // Validate Budget
+//     if (!document.querySelector('input[name="budget"]:checked')) {
+//         document.getElementById('budgetError').classList.remove('hidden');
+//         isValid = false;
+//     }
+
+//     // Validate Deadline
+//     if (!document.querySelector('input[name="deadline"]:checked')) {
+//         document.getElementById('deadlineError').classList.remove('hidden');
+//         isValid = false;
+//     }
+
+//     // Validate Contact Method
+//     if (!document.querySelector('input[name="contactMethod"]:checked')) {
+//         document.getElementById('contactMethodError').classList.remove('hidden');
+//         isValid = false;
+//     }
+
+//     if (isValid) {
+//         alert('Form submitted successfully!');
+//         // You can add your form submission logic here
+//     }
+// }); -->
+ 
+</body>
+</html>
+
