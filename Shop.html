@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Store</title>
+    <link rel="stylesheet" href="src/output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Yatra+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/22473a59b2.js" crossorigin="anonymous"></script>
+    <style>
+        .product-card-1:hover {
+            box-shadow: 0px 4px 5px #B2ABAB;
+        }
+    </style>
+</head>
+
+<body class="bg-[#eeeeee]">
+    <header class="w-full z-10  min-h-0 sticky bg-[#fcb14e] px-2 sm:px-8 font-Italiana shadow-lg">
+        <nav class="w-full p-4 py-4  min-h-0  flex justify-between  lg:justify-between items-center">
+            <div class="lg:hidden "> <i
+                    class="fa-solid fa-bars text-3xl  text-black sm:px-6  cursor-pointer hover:text-white "
+                    id="store-bar"></i></div>
+            <h2 class="  text-xl sm:text-2xl p-2 px-4  border border-black bg-[#FFCC8C] font-bold">CrestWood Interiors
+            </h2>
+
+            <div class="flex gap-x-8 items-center w-fit">
+                <div class="items-center hidden"> <input type="text"
+                        class="w-60 px-4 py-1 rounded-2xl bg-white/70 border border-black mr-8" placeholder="search"> <i
+                        class="fa-solid fa-magnifying-glass text-2xl  font-light"></i> </div>
+                <i class="fa-solid fa-cart-shopping text-2xl hover:text-white" id="cartIcon"></i>
+                <i class="fa-solid fa-user text-2xl hidden sm:flex hover:text-white "></i>
+            </div>
+        </nav>
+    </header>
+    <section class="w-full  max-h-[70px] overflow-x-auto overflow-y-hidden  " id="categories">
+        <ul class="py-4   w-[1000px] max-h-[full] flex gap-x-4 justify-around  mx-auto ">
+            <li
+                class="categories bg-white   border border-black rounded-3xl font-Italiana text-lg bg-gradient-to-r from-[#FFD6A0] to-[#FDA62E] p-1 px-8">
+                All</li>
+            <li
+                class="categories bg-white  border border-black rounded-3xl font-Italiana text-lg hover:bg-gradient-to-r from-[#FFD6A0] to-[#FDA62E] p-1 px-4">
+                Furniture</li>
+            <li
+                class="categories bg-white border border-black rounded-3xl font-Italiana text-lg hover:bg-gradient-to-r from-[#FFD6A0] to-[#FDA62E] p-1 px-4">
+                Mirrors</li>
+            <li
+                class="categories bg-white border border-black rounded-3xl font-Italiana text-lg hover:bg-gradient-to-r from-[#FFD6A0] to-[#FDA62E] p-1 px-4">
+                Home decor</li>
+            <li
+                class="categories bg-white  border border-black rounded-3xl font-Italiana text-lg hover:bg-gradient-to-r from-[#FFD6A0] to-[#FDA62E] p-1 px-4">
+                Lamps & Lightning</li>
+            <li
+                class="categories bg-white border border-black rounded-3xl font-Italiana text-lg hover:bg-gradient-to-r from-[#FFD6A0] to-[#FDA62E] p-1 px-4">
+                Kithcen Dining</li>
+            <li
+                class="categories bg-white border border-black rounded-3xl font-Italiana text-lg hover:bg-gradient-to-r from-[#FFD6A0] to-[#FDA62E] p-1 px-4">
+                Rugs & Mattresses</li>
+        </ul>
+        <!-- // -->
+    </section>
+    <section class="  flex mt-4 gap-x-4 lg:mx-16">
+        <aside id="filter"
+            class=" bg-[#FFFFFF] hidden lg:block min-w-[250px]  h-[700px] rounded-lg mx-4 p-2 py-4 fixed lg:relative">
+            <H2
+                class="p-3 mb-2  font-Italiana text-xl bg-[#F2F1F1] border-b-2 border-[#B2ABAB] text-center font-semibold">
+                Sort & Filter</H2>
+            <div id="price-filter"
+                class="p-2 py-4 my-2 font-Italiana text-base bg-[#F2F1F1] border-b-2 border-[#B2ABAB]">
+                <h3 class="text-lg font-semibold ">Price</h3>
+                <ul class="pl-3 font-Italiana text-base ">
+                    <li class="p-2 filter  text-base font-semibold hover:border-l-2 hover:border-[#B2ABAB]">Low to High
+                    </li>
+                    <li class="p-2 filter  text-base font-semibold hover:border-l-2 hover:border-[#B2ABAB]">High to Low
+                    </li>
+                    <li class="p-2 filter  text-base font-semibold hover:border-l-2 hover:border-[#B2ABAB]">Popular</li>
+                </ul>
+            </div>
+            <div id="trending" class="pl-3 py-4 font-Italiana text-base bg-[#F2F1F1] border-b-2 border-[#B2ABAB]">
+                <h3 class="text-lg font-semibold mb-2">Trending</h3>
+                <ul>
+                    <li class="p-2 filter text-base font-semibold hover:border-l-2 hover:border-[#B2ABAB]">New Arrival
+                    </li>
+                    <li class="p-2 filter text-base font-semibold hover:border-l-2 hover:border-[#B2ABAB]">Best Seller
+                    </li>
+                    <li class="p-2 filter text-base font-semibold hover:border-l-2 hover:border-[#B2ABAB]">Seasonal</li>
+                </ul>
+            </div>
+        </aside>
+        <main class="w-full py-4 px-4 bg-white  grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] gap-x-2 ">
+
+            <div class="product-card-1 bg-white  h-[370px] p-2 px-4  flex flex-col justify-between mb-4 ">
+                <div class="img h-full bg-[#B2ABAB] "></div>
+                <div class="flex flex-col   items-center">
+                    <div class="info font-Italiana font-semibold p-4 text-center">Product Name <br> Product Description
+                    </div>
+                    <div class=" w-full flex items-center justify-between p-4"><span
+                            class="font-Italiana font-semibold">Price: $1000</span>
+                        <button
+                            class="p-2 px-4 rounded-md  bg-orange-500 font-Italiana font-semibold hover:bg-orange-600 text-white">Add
+                            to cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card-1 bg-white  h-[370px] p-2 px-4  flex flex-col justify-between mb-4 ">
+                <div class="img h-full bg-[#B2ABAB] "></div>
+                <div class="flex flex-col   items-center">
+                    <div class="info font-Italiana font-semibold p-4 text-center">Product Name <br> Product Description
+                    </div>
+                    <div class=" w-full flex items-center justify-between p-4"><span
+                            class="font-Italiana font-semibold">Price: $1000</span>
+                        <button
+                            class="p-2 px-4 rounded-md  bg-orange-500 font-Italiana font-semibold hover:bg-orange-600 text-white">Add
+                            to cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card-1 bg-white  h-[370px] p-2 px-4  flex flex-col justify-between mb-4 ">
+                <div class="img h-full bg-[#B2ABAB] "></div>
+                <div class="flex flex-col   items-center">
+                    <div class="info font-Italiana font-semibold p-4 text-center">Product Name <br> Product Description
+                    </div>
+                    <div class=" w-full flex items-center justify-between p-4"><span
+                            class="font-Italiana font-semibold">Price: $1000</span>
+                        <button
+                            class="p-2 px-4 rounded-md  bg-orange-500 font-Italiana font-semibold hover:bg-orange-600 text-white">Add
+                            to cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card-1 bg-white  h-[370px] p-2 px-4  flex flex-col justify-between mb-4 ">
+                <div class="img h-full bg-[#B2ABAB] "></div>
+                <div class="flex flex-col   items-center">
+                    <div class="info font-Italiana font-semibold p-4 text-center">Product Name <br> Product Description
+                    </div>
+                    <div class=" w-full flex items-center justify-between p-4"><span
+                            class="font-Italiana font-semibold">Price: $1000</span>
+                        <button
+                            class="p-2 px-4 rounded-md  bg-orange-500 font-Italiana font-semibold hover:bg-orange-600 text-white">Add
+                            to cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card-1 bg-white  h-[370px] p-2 px-4  flex flex-col justify-between  mb-4">
+                <div class="img h-full bg-[#B2ABAB] "></div>
+                <div class="flex flex-col   items-center">
+                    <div class="info font-Italiana font-semibold p-4 text-center">Product Name <br> Product Description
+                    </div>
+                    <div class=" w-full flex items-center justify-between p-4"><span
+                            class="font-Italiana font-semibold">Price: $1000</span>
+                        <button
+                            class="p-2 px-4 rounded-md  bg-orange-500 font-Italiana font-semibold hover:bg-orange-600 text-white">Add
+                            to cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card-1 bg-white  h-[370px] p-2 px-4  flex flex-col justify-between mb-4 ">
+                <div class="img h-full bg-[#B2ABAB] "></div>
+                <div class="flex flex-col   items-center">
+                    <div class="info font-Italiana font-semibold p-4 text-center">Product Name <br> Product Description
+                    </div>
+                    <div class=" w-full flex items-center justify-between p-4"><span
+                            class="font-Italiana font-semibold">Price: $1000</span>
+                        <button
+                            class="p-2 px-4 rounded-md  bg-orange-500 font-Italiana font-semibold hover:bg-orange-600 text-white">Add
+                            to cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card-1 bg-white  h-[370px] p-2 px-4  flex flex-col justify-between mb-4 ">
+                <div class="img h-full bg-[#B2ABAB] "></div>
+                <div class="flex flex-col   items-center">
+                    <div class="info font-Italiana font-semibold p-4 text-center">Product Name <br> Product Description
+                    </div>
+                    <div class=" w-full flex items-center justify-between p-4"><span
+                            class="font-Italiana font-semibold">Price: $1000</span>
+                        <button
+                            class="p-2 px-4 rounded-md  bg-orange-500 font-Italiana font-semibold hover:bg-orange-600 text-white">Add
+                            to cart</button>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </section>
+    <!-- cart  -->
+    <div class="hidden w-full h-full absolute top-0 z-10 overflow-x-auto  " id="cartPage">
+        <div class="bg-black/60 w-full  " id="blank"></div>
+        <div id="cart" class="md:w-[500px] w-[375px] sm:w-[600px] bg-white h-full ">
+           
+            <div id="cart-container" class=" h-full w-[375px] p-4  flex flex-col justify-end  items-center ">
+                <div class="m-4 w-full flex justify-end"><i class="fa-solid fa-x text-2xl hover:text-gray-500" id="closeIcon"></i></div>
+                <div class=" h-full p-4  flex flex-col justify-center  items-center">
+                <p class="text-2xl m-4 font-Italiana font-semibold ">Your cart is Empty</p>
+                <a href="Shop.html" class="p-4 bg-pink-700 text-white  font-Italiana font-semibold hover:bg-white hover:border-2 border-pink-700 hover:text-pink-700">Shop Now</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const categories = document.querySelectorAll(".categories");
+
+    categories.forEach(category => {
+        category.addEventListener('click', (e) => {
+            // Remove the background color class from all `li` items
+            categories.forEach(cat => cat.classList.remove("bg-gradient-to-r", "from-[#FFD6A0]", "to-[#FDA62E]"));
+
+            // Add the background color class to the clicked `li`
+            category.classList.add("bg-gradient-to-r", "from-[#FFD6A0]", "to-[#FDA62E]");
+        });
+    });
+
+
+    const storeBar = document.querySelector("#store-bar");
+    const filterMenu = document.querySelector("#filter");
+
+    storeBar.addEventListener('click', () => {
+        filterMenu.classList.toggle('hidden')
+    })
+
+
+// cart 
+const cartIcon = document.querySelector('#cartIcon');
+const cartPage = document.querySelector('#cartPage');
+const closeIcon = document.querySelector('#closeIcon');
+const blank = document.querySelector('#blank');
+cartIcon.addEventListener('click', () => {
+cartPage.classList.remove('hidden');
+cartPage.classList.add('flex');
+
+});
+
+closeIcon.addEventListener('click', ()=>{
+
+    cartPage.classList.remove('flex');
+    cartPage.classList.add('hidden');
+})
+blank.addEventListener('click', ()=>{
+
+    cartPage.classList.remove('flex');
+    cartPage.classList.add('hidden');
+})
+
+</script>
+
+</html>
