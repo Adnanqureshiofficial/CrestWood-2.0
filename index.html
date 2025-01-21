@@ -78,7 +78,7 @@
     <!-- Main section  -->
 
     <main
-        class="bg-[url('/images/hero_image.png')] bg-fixed overflow-x-hidden bg-cover bg-center bg-no-repeat min-h-screen w-full ">
+        class=" parallax bg-[url('/images/hero_image.png')] bg-[#FCD49E] bg-fixed overflow-x-hidden bg-cover bg-center bg-no-repeat min-h-screen w-full ">
 
         <div
             class="chat_icon_block z-40 min-w-fit text-[#8E3100]  text-xl fixed bottom-4 right-4 flex  justify-center items-center">
@@ -134,7 +134,7 @@
 
                 </div>
                 <div class="min-h-0   flex justify-center items-center m-5  md:mb-16">
-                    <a href="consultation.html"
+                    <a href="bookConsultation.html"
                         class="p-2 px-6 mt-4 bg-black text-white text-2xl font-Italiana  hover:text-[#FFD6A0]">Book
                         Consulation</a>
                 </div>
@@ -144,7 +144,7 @@
     </section>
     <!-- image-section 2 -->
     <section
-        class="bg-[url('/images/homeImage2.png')] bg-fixed overflow-x-hidden bg-cover bg-center bg-no-repeat min-h-screen w-full ">
+        class="parallax2  bg-[url('/images/homeImage2.png')] bg-[#FCD49E] bg-fixed overflow-x-hidden bg-cover bg-center  bg-no-repeat min-h-screen w-full ">
     </section>
     <!-- section -3  -->
 
@@ -180,7 +180,7 @@
 
     <!-- section 4 -->
     <section
-        class="bg-[url('/images/image4.jpg')] bg-fixed overflow-x-hidden bg-cover bg-center bg-no-repeat min-h-screen w-full ">
+        class="parallax  bg-[url('/images/image4.jpg')] bg-[#FFD6A0] bg-fixed overflow-x-hidden bg-cover bg-center bg-no-repeat min-h-screen w-full ">
     </section>
     <!-- review section  -->
     <section class="w-full min-h-[0] bg-gradient-to-b from-[#FFD6A0] to-[#FF9648] pb-12">
@@ -261,7 +261,7 @@
     
 
     <section
-    class="bg-white    overflow-x-hidden bg-cover bg-center bg-no-repeat min-h-[30vh] w-full ">
+    class="bg-white  overflow-x-hidden bg-cover bg-center bg-no-repeat min-h-[30vh] w-full ">
 </section>
     <!-- footer  -->
     <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 110" version="1.1"
@@ -328,6 +328,21 @@
 
     <!-- JavaScript -->
      <script src="script.js"></script>
+     <script>
+     document.addEventListener('scroll', () => {
+        const parallaxElements = document.querySelector('.parallax');
+        const parallaxElements2 = document.querySelector('.parallax2');
+        
+          const speed = 0.5; // Adjust speed factor
+          const speed2 = 0.1; // Adjust speed factor
+          const offset = window.scrollY * speed;
+          const offset2 = window.scrollY * speed2;
+          parallaxElements.style.backgroundPosition = `center ${offset}px`;
+          parallaxElements2.style.backgroundPosition = `center ${offset2}px`;
+          
+        });
+      
+    </script>
    
 </body>
 
